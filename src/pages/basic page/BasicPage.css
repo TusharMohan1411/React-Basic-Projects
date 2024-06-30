@@ -1,0 +1,9 @@
+#basic-page-main {
+    width: 70%;
+    margin: auto;
+}
+
+#basic-page-main h1 {
+    text-align: center;
+    margin: 60px auto;
+}

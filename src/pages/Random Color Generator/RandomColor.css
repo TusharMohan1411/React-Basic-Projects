@@ -1,0 +1,29 @@
+#random-color-main-container {
+    height: calc(100vh - 100px);
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid yellow;
+    flex-direction: column;
+}
+
+#color-btns {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#color-btns button {
+    padding: 15px 30px;
+    font-size: 20px;
+    border-radius: 20px;
+    transition: 0.2s;
+}
+
+#color-btns button:hover {
+    background-color: grey;
+    color: white;
+}
