@@ -7,3 +7,14 @@
     text-align: center;
     margin: 60px auto;
 }
+
+#star-rating-cont {
+    text-align: center;
+}
+
+#image-slider-main {
+    margin: 100px auto;
+    border: 2px solid white;
+    text-align: center;
+    padding: 20px;
+}
