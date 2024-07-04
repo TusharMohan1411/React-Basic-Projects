@@ -1,6 +1,7 @@
-import Accordian from '../../components/Accordian';
+import Accordian from '../../components/Accordian/Accordian';
 import ImageSlider from '../../components/Image-Slider/ImageSlider';
-import StarRating from '../../components/StarRating';
+import LoadMore from '../../components/Load More/LoadMore';
+import StarRating from '../../components/Star Rating/StarRating';
 import './BasicPage.css'
 import Examples from "./Examples";
 
@@ -23,7 +24,10 @@ export default function BasicPage() {
                         url="https://picsum.photos/v2/list?page=2&limit=10"
                     />
                 </div>
-                <h3>Page End</h3>
+                <div id="LoadMore-main">
+                    <LoadMore />
+                </div>
+                <h3 id='BasicPageEnd'>Page End</h3>
             </section>
         </>
     )
