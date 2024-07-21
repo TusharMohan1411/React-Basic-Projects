@@ -1,6 +1,7 @@
 import Accordian from '../../components/Accordian/Accordian';
 import ImageSlider from '../../components/Image-Slider/ImageSlider';
 import LoadMore from '../../components/Load More/LoadMore';
+import QrCode from '../../components/Qr Code Generator/QrCode';
 import StarRating from '../../components/Star Rating/StarRating';
 import './BasicPage.css'
 import Examples from "./Examples";
@@ -26,6 +27,9 @@ export default function BasicPage() {
                 </div>
                 <div id="LoadMore-main">
                     <LoadMore />
+                </div>
+                <div id="qr-section">
+                    <QrCode />
                 </div>
                 <h3 id='BasicPageEnd'>Page End</h3>
             </section>

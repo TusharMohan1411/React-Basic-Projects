@@ -42,7 +42,10 @@ export default function Accordian() {
                             <h3>{ques.question}</h3>
                             <button onClick={enableMultiSelection
                                 ? () => handleMultipleAnswer(ques.id)
-                                : () => handleGiveAnswer(ques.id)} >Show Answer</button>
+                                : () => handleGiveAnswer(ques.id)}
+                            >
+                                Show Answer
+                            </button>
                             {
                                 enableMultiSelection ?
                                     (

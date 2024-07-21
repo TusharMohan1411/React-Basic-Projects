@@ -29,7 +29,6 @@ export default function Todo() {
                 id: Math.random(),
                 title: newTodo.title,
                 description: newTodo.description,
-                // completed: false
             }
 
             setTodos([...todos, newTodoItem]);

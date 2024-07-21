@@ -24,8 +24,20 @@ export default function TodoItem({ todo, handleDelete }) {
             <div className={completeClass}>
                 <p id='status'> Status: {completed ? 'Completed' : 'Pending'}</p>
                 <div id='todo-inputs'>
-                    <input type="text" name="title" id='todo-title' defaultValue={todo.title} readOnly={!isEditing && true} />
-                    <textarea name="description" id='todo-desc' readOnly={!isEditing && true}>{todo.description}</textarea>
+                    <input
+                        type="text"
+                        name="title"
+                        id='todo-title'
+                        defaultValue={todo.title}
+                        readOnly={!isEditing && true}
+                    />
+                    <textarea
+                        name="description"
+                        id='todo-desc'
+                        readOnly={!isEditing && true}
+                    >
+                        {todo.description}
+                    </textarea>
 
                 </div>
 

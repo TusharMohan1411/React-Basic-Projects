@@ -28,7 +28,7 @@ export default function LoadMore() {
     }, [url])
 
     function handleLoadMore() {
-        setImgCount((prevState) => prevState + 3);
+        setImgCount((prevState) => prevState + 1);
     }
 
     return (

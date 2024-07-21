@@ -32,7 +32,6 @@ export default function ImageSlider({ url }) {
         } else {
             console.log('URL not found');
         }
-
     }, [url])
 
     function handlePreviousImage() {
@@ -55,7 +54,7 @@ export default function ImageSlider({ url }) {
         <div id="Image-Slider-Cont">
             <h1>Image Slider</h1>
             <div className='Image-Slider'>
-                {isLoading ? 'Loading Data. Please Wait...' : null}
+
                 {errorMsg &&
                     <div id="error-message">
                         {errorMsg}
@@ -67,16 +66,20 @@ export default function ImageSlider({ url }) {
                         size={50}
                         onClick={handlePreviousImage}
                     />
-                    <div id="images" style={{ transform: `translateX(-${currentImage * 100}%)` }}>
-                        {images && images.length ? images.map((item) =>
-                            <img
-                                key={item.id}
-                                src={item.download_url}
-                                alt={item.author}
-                                className='image'
-                            />
-                        ) : null}
-                    </div>
+
+                    {isLoading ? 'Loading Data. Please Wait...' :
+                        <div id="images" style={{ transform: `translateX(-${currentImage * 100}%)` }}>
+                            {images && images.length ? images.map((item) =>
+                                <img
+                                    key={item.id}
+                                    src={item.download_url}
+                                    alt={item.author}
+                                    className='image'
+                                />
+                            ) : null}
+                        </div>
+                    }
+
                     <BsArrowRightCircleFill
                         className='right-arrow arrow'
                         size={50}
